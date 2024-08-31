@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euvioli</title>
+    <link rel="icon" href="4806a820-be31-42a4-9f82-ca3a8fd5b601.jpg" type="image/x-icon">
+
+
+        <style>
+body {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('WhatsApp\ Image\ 2024-08-30\ at\ 21.01.30.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+a {
+    text-decoration: none;   
+}
+.box {
+    font-size:20px;
+    color: white;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    background: #191919;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttons-container {
+    display: flex;
+    justify-content:space-around;
+    height: 50px;
+    width: 150px;
+}
+button {
+    height: 30px;
+    width: 50px;
+    background: white;
+    border-radius: 5px;
+    color: blue;
+    font-weight: 600
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>C*zinhho hoje?</p>
+            <div class="buttons-container">
+                <button>
+                    <a href="https://www.instagram.com">Sim</a>
+                </button>
+                <button id="no">Não</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 60;
+        let width = window.innerWidth - 60;
+
+        button.addEventListener('mouseover', function () {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px"; 
+})
+    </script>
+</html>
